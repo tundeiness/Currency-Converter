@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Currency Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="multimedia">
+    <img src="https://preview.ibb.co/jbVpTL/pavel-churiumov-321968-unsplash.jpg" alt="Foreign Currency"  >
+    <div class ="text">
+      <h1>Currency Converter</h1>
+    </div>
+  </div>
+  <div id="content">
+    <div id="itemOne">
+      <div id="from"><h5>From</h5></div>
+      <div id="currency">
+          <select id="fro">
+                <option value="Select Currency">Select Currency :</option>
+        </select>
+      </div>
+      <div id="inpoots">
+        <input type="number" id="number1" onkeyup="convertCurrency()" name="value1" onfocus="this.value=''" required>
+      </div>
+    </div>
+     <div id="itemTwo">
+      <div id="to"><h5>To</h5></div>
+      <div id="currency">
+        <select id="fro">
+                <option value="Select Currency">Select Currency :</option>
+        </select>
+      </div>
+      <div id="inpoots">
+        <input type="number" id="number1" onkeyup="convertCurrency()" name="value1" onfocus="this.value=''" required>
+      </div>
+    </div> 
+  </div>
+</div><!-- wrapper ends-->
+    <script src="./js/idb.js"></script>
+    <script src="./sw.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

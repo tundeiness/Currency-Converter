@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+* {
+    box-sizing: border-box;
+}
+
+
+/* $mobile: 3%;
+$font: 'Pacifico', cursive;
+$fontToo: 'Open Sans', sans-serif;
+$topRightRadius: 5px;
+$heading-5: auto 9%;
+$selectPadding: 2%;
+$auto: minmax(10%, 1fr); */
+
+body {
+    background: #4b3a3e;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 'multimedia ' 'content';
+    max-width: 500px;
+    border: 1px solid #C0C0C0;
+    margin: 10% auto;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+#multimedia {
+    grid-area: multimedia;
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.text {
+    width: 100%;
+    position: absolute;
+    /* requires more responsiveness on bigger devices*/
+    top: 29%;
+}
+
+h1 {
+    color: white;
+    line-height: 1.5;
+    font-family: 'Pacifico', cursive;
+}
+
+#content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 'itemOne' 'itemTwo';
+    background: #000000;
+    background: linear-gradient(to bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+}
+
+#itemOne {
+    grid-area: itemOne;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 'from''currency' 'inpoots';
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    max-width: 80%;
+}
+
+#from {
+    grid-area: from;
+    background: silver;
+    max-width: 13%;
+    border-top-right-radius: 5px;
+}
+
+#currency {
+    grid-area: currency;
+    margin-bottom: 1.5%;
+}
+
+#fro {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#number1 {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#itemTwo {
+    grid-area: itemTwo;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 'from''currency' 'inpoots';
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    max-width: 80%;
+}
+
+#itemTwo #to {
+    grid-area: from;
+    background: silver;
+    max-width: 13%;
+    border-top-right-radius: 5px;
+}
+
+h5 {
+    margin: auto 9%;
+}
+
+#itemTwo #currency {
+    grid-area: currency;
+    margin-bottom: 1%;
+}
+
+#fro {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#inpoots {
+    grid-area: inpoots;
+}
+
+#itemTwo #number1 {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* remove annoying up and down arrow UI*/
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+@media only screen and (max-width: 266px) {
+    .text h1 {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+    .text h1 {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .text h1 {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .text h1 {
+        text-align: center;
+    }
+}
