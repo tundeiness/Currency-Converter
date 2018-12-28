@@ -149,18 +149,7 @@ h5 {
     grid-area: inpoots;
 }
 
-
-/* #itemTwo #number1 {
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-} */
-
-#itemTwo #text {
+#itemTwo #number1 {
     width: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
