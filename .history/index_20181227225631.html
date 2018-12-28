@@ -11,51 +11,40 @@
 
 <body>
 <div id="wrapper">
-
   <div id="multimedia">
     <img src="https://preview.ibb.co/jbVpTL/pavel-churiumov-321968-unsplash.jpg" alt="Foreign Currency"  >
     <div class ="text">
       <h1>Currency Converter</h1>
     </div>
   </div>
-
   <div id="content">
     <div id="itemOne">
       <div id="from"><h5>From</h5></div>
-
       <div id="currency">
           <select id="fro">
                 <option value="Select Currency">Select Currency :</option>
           </select>
       </div>
-
       <div id="inpoots">
         <input type="number" id="number1" onkeyup="convertCurrency()" name="value1" onfocus="this.value=''" required>
       </div>
-
-    </div><!--id=from ends-->
-    
+    </div>
 
      <div id="itemTwo">
       <div id="to"><h5>To</h5></div>
-
       <div id="currency">
-        <select id="too">
+        <select id="fro">
                 <option value="Select Currency">Select Currency :</option>
         </select>
       </div>
-
       <div id="inpoots">
         <input type="number" id="number1" onkeyup="convertCurrency()" name="value1" onfocus="this.value=''" required>
       </div>
-
-    </div><!--id to ends--> 
-  </div><!--itemTwo ends-->
-
+    </div> 
+  </div>
 </div><!-- wrapper ends-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/idb.js"></script>
-    <script src="./js/sw.js"></script>
+    <script src="./sw.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
