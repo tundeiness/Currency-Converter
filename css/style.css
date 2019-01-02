@@ -60,7 +60,7 @@ h1 {
     grid-template-columns: auto;
     grid-template-areas: 'itemOne' 'itemTwo';
     background: #000000;
-    background: linear-gradient(to bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+    background: linear-gradient(180deg, #000000 0%, #f9f6ff 100%);
 }
 
 #itemOne {
